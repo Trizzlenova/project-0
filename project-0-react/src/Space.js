@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import apiKey from config.js
 
 class Space extends Component {
   constructor(taco) {
@@ -11,7 +12,7 @@ class Space extends Component {
   }
 
   componentDidMount() {
-    fetch('https://api.nasa.gov/planetary/apod?api_key=taN7yRSSTWnRu4IeLrwlfaZJuD70ldfEFMyIdXm7')
+    fetch('https://api.nasa.gov/planetary/apod?api_key=')
       .then(res => res.json())
       .then(
         (result) => {
